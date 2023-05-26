@@ -1,0 +1,37 @@
+root: /scratch2/Code/cocoa/cocoamapping/
+
+wandb:
+  project: cocoamapping
+  entity: d1nofuzi
+  log_dir: ${root}/wandb/
+  mode: offline
+
+distributed:
+  num_workers: 8
+  distributed: 0
+  world_size: 1
+  address: localhost
+  port: '12355'
+
+model:
+  count: 1
+
+data:
+  data_dir: "/scratch2/Code/cocoa/cocoamapping/dataset/data/"
+
+training:
+  save_dir: ${root}/savedmodels/
+  epochs: 100
+  batch_size: 128
+  mixed_prec: False
+  learning_rate: 1e-4
+  weight_decay: 1e-4
+  gamma: 0.1
+  milestones: [60, 90]
+
+validation:
+  interval: 1
+  batch_size: 256
+
+logging:
+  enable_tqdm: True
