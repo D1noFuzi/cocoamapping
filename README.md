@@ -1,4 +1,4 @@
-# Official repository for 'Satellite-based high-resolution maps of cocoa for Côte d'Ivoire and Ghana'
+# Official repository for 'Cocoa plantations are associated with deforestation in Côte d’Ivoire and Ghana'
 
 This repository contains code for our Nature food paper [Cocoa plantations are associated with deforestation in Côte d’Ivoire and Ghana](https://www.nature.com/articles/s43016-023-00751-8).
 
